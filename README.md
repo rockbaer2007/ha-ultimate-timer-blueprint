@@ -74,6 +74,7 @@ input_boolean:
 | Running       | Indicates active timer |
 | Done          | Set when finished      |
 | Reset Time    | Daily reset (optional) |
+...
 
 🧠 How It Works
 * Start trigger → timer begins
