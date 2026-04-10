@@ -17,6 +17,7 @@ blueprint:
     stop_entity:
       name: Stop Trigger (Optional)
       description: Entity used to stop the timer before completion
+      default: []
       selector:
         entity:
           domain: input_boolean
@@ -97,11 +98,15 @@ action:
           - condition: trigger
             id: stop
         sequence:
-          - service: input_boolean.turn_off
-            target:
-              entity_id:
-                - !input running_entity
-                - !input stop_entity
+          - if:
+              - condition: template
+                value_template: "{{ stop_entity != [] }}"
+            then:
+              - service: input_boolean.turn_off
+                target:
+                  entity_id:
+                    - !input running_entity
+                    - !input stop_entity
 
       # ▶️ START HANDLING
       - conditions:
@@ -124,21 +129,26 @@ action:
             target:
               entity_id: !input done_entity
 
-          # Wait for stop or timeout
-          - wait_for_trigger:
-              - platform: state
-                entity_id: !input stop_entity
-                to: "on"
-            timeout: !input duration
-            continue_on_timeout: true
+          # Wait logic (safe if no stop entity)
+          - if:
+              - condition: template
+                value_template: "{{ stop_entity != [] }}"
+            then:
+              - wait_for_trigger:
+                  - platform: state
+                    entity_id: !input stop_entity
+                    to: "on"
+                timeout: !input duration
+                continue_on_timeout: true
+            else:
+              - delay: !input duration
 
           - choose:
 
               # ⏹️ STOP detected
               - conditions:
-                  - condition: state
-                    entity_id: !input stop_entity
-                    state: "on"
+                  - condition: template
+                    value_template: "{{ stop_entity != [] and is_state(stop_entity, 'on') }}"
                 sequence:
                   - service: input_boolean.turn_off
                     target:
