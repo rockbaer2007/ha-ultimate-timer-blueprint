@@ -31,3 +31,23 @@ Designed for real-world automation use cases like:
 
 1. Copy the blueprint YAML file
 2. Place it into:
+https://github.com/rockbaer2007/ha-ultimate-timer-blueprint
+
+---
+
+## 🔧 Required Helpers
+
+Create the following `input_boolean` helpers:
+
+- Start trigger
+- Stop trigger (optional)
+- Running state
+- Done state
+
+Example:
+
+
+input_boolean.pool_timer_start
+input_boolean.pool_timer_stop
+input_boolean.pool_timer_running
+input_boolean.pool_timer_done
