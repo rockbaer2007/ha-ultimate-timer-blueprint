@@ -33,6 +33,15 @@ Designed for real-world automation use cases like:
 2. Place it into:
 https://github.com/rockbaer2007/ha-ultimate-timer-blueprint
 
+### Option 2: Import Blueprint
+
+Click the button below to import the blueprint directly into Home Assistant:
+
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3.yaml)
+
+Or paste this URL manually:
+
+https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3.yaml
 ---
 
 ## 🔧 Required Helpers
