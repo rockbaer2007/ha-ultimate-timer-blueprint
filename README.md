@@ -5,6 +5,8 @@
 ![GitHub release](https://img.shields.io/github/v/release/rockbaer2007/ha-ultimate-timer-blueprint)
 ![GitHub stars](https://img.shields.io/github/stars/rockbaer2007/ha-ultimate-timer-blueprint?style=social)
 
+> A powerful multi-instance timer blueprint for Home Assistant with watchdog functionality and flexible daily reset.
+
 # ⏱️ Ultimate Timer V3 (Home Assistant Blueprint)
 
 A powerful, reusable and multi-instance safe timer blueprint for Home Assistant.
