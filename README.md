@@ -51,3 +51,74 @@ input_boolean.pool_timer_start
 input_boolean.pool_timer_stop
 input_boolean.pool_timer_running
 input_boolean.pool_timer_done
+
+
+---
+
+## ⚙️ Configuration
+
+When creating an automation from the blueprint:
+
+| Field | Description |
+|------|------------|
+| Start Trigger | Button to start timer |
+| Stop Trigger | Optional stop |
+| Duration | hh:mm:ss |
+| Running | Indicates active timer |
+| Done | Set when finished |
+| Reset Time | Daily reset (optional) |
+
+---
+
+## 🧠 How It Works
+
+1. Start trigger → timer begins
+2. Running state → ON
+3. After duration → Done = ON
+4. Daily reset → all OFF
+
+---
+
+## 💡 Example Use Case (Pond Pump Runtime Limit)
+
+- Pump starts → trigger timer
+- After 5 hours → system shuts down
+- Reset next day automatically
+
+---
+
+## 🧩 Multi-Instance Support
+
+You can create multiple independent timers:
+
+- `pool_timer_*`
+- `garden_timer_*`
+- `pond_timer_*`
+
+---
+
+## 🛠️ Example
+
+See `/examples/example_setup.yaml`
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## 🤝 Contributing
+
+Feel free to:
+- open issues
+- submit improvements
+- suggest features
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star ⭐
+
