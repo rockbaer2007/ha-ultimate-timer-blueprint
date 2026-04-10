@@ -1,3 +1,10 @@
+# ⏱️ Ultimate Timer V3
+
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3.yaml)
+
+![GitHub release](https://img.shields.io/github/v/release/rockbaer2007/ha-ultimate-timer-blueprint)
+![GitHub stars](https://img.shields.io/github/stars/rockbaer2007/ha-ultimate-timer-blueprint?style=social)
+
 # ⏱️ Ultimate Timer V3 (Home Assistant Blueprint)
 
 A powerful, reusable and multi-instance safe timer blueprint for Home Assistant.
