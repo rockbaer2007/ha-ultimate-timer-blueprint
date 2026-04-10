@@ -94,9 +94,11 @@ You can create multiple independent timers:
 * pond_timer_*
 
 🛠️ Example
-See 
+ 
 /examples/example_setup.yaml
+
 /examples/lovelace.yaml
+
 /examples/button.yaml
 
 📜 License
