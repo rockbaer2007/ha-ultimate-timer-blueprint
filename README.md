@@ -74,37 +74,7 @@ input_boolean:
 | Running       | Indicates active timer |
 | Done          | Set when finished      |
 | Reset Time    | Daily reset (optional) |
-...
 
-🧠 How It Works
-* Start trigger → timer begins
-* Running state → ON
-* After duration → Done = ON
-* Daily reset → all OFF
+...yaml
 
-💡 Example Use Case (Pond Pump Runtime Limit)
-* Pump starts → trigger timer
-* After 5 hours → system shuts down
-* Reset next day automatically
-
-🧩 Multi-Instance Support
-You can create multiple independent timers:
-* pool_timer_*
-* garden_timer_*
-* pond_timer_*
-
-🛠️ Example
-See /examples/example_setup.yaml
-
-📜 License
-MIT License
-
-🤝 Contributing
-Feel free to:
-* Open issues
-* Submit improvements
-*Suggest features
-
-⭐ Support
-If you like this project, give it a star ⭐
    
