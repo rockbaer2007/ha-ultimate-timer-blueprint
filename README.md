@@ -113,20 +113,7 @@ If you like this project, give it a star ⭐
 Example Lovelace UI for controlling the timer:
 
 /examples/lovelace.yaml
-```
-Example Lovelace Button Card for controlling the timer:
-```yaml
-type: horizontal-stack
-cards:
-  - type: button
-    entity: input_boolean.pool_timer_start
-    name: Start
-    icon: mdi:play
+/examples/button.yaml
 
-  - type: button
-    entity: input_boolean.pool_timer_stop
-    name: Stop
-    icon: mdi:stop
-```
 
    
