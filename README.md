@@ -149,5 +149,19 @@ cards:
       content: |
         ✅ **Timer finished!**
 ```
+Example Lovelace Button Card for controlling the timer:
+```yaml
+type: horizontal-stack
+cards:
+  - type: button
+    entity: input_boolean.pool_timer_start
+    name: Start
+    icon: mdi:play
+
+  - type: button
+    entity: input_boolean.pool_timer_stop
+    name: Stop
+    icon: mdi:stop
+```
 
    
