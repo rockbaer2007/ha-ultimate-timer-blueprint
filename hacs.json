@@ -1,7 +1,8 @@
 {
   "name": "Ultimate Timer Blueprint",
   "content_in_root": false,
-  "filename": "ultimate_timer_v3.yaml",
   "render_readme": true,
-  "homeassistant": "2023.0.0"
+  "homeassistant": "2023.0.0",
+  "iot_class": "local_push",
+  "filename": "ultimate_timer_v3_2.yaml"
 }
