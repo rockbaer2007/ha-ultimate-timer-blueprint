@@ -1,11 +1,13 @@
-# ⏱️ Ultimate Timer V3.2 (Hybrid Helper / MQTT)
+# ⏱️ Ultimate Timer V3.2.2 FINAL
 
-[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2.yaml)
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_2.yaml)
 
 ![GitHub release](https://img.shields.io/github/v/release/rockbaer2007/ha-ultimate-timer-blueprint)
 ![GitHub stars](https://img.shields.io/github/stars/rockbaer2007/ha-ultimate-timer-blueprint?style=social)
 
-> Ein leistungsstarker Hybrid-Timer für Home Assistant mit Unterstützung für Helper und MQTT.
+🇬🇧 [English Version](README.md)
+
+> Leistungsstarker Hybrid-Timer für Home Assistant mit zuverlässiger STOP-Logik und MQTT Unterstützung.
 
 ---
 
@@ -13,35 +15,80 @@
 
 - ⏱️ Timer im Format `hh:mm:ss`  
 - ▶️ Start-Trigger (Taster)  
-- ⏹️ Optionaler Stop-Trigger  
-- 📡 Status „läuft“  
-- 🎯 Ergebnis nach Ablauf  
-- 🌙 Konfigurierbare Reset-Zeit  
+- ⏹️ STOP funktioniert zuverlässig  
+- 📡 Running Status  
+- 🎯 Done Status  
+- 🌙 täglicher Reset  
 - 🔁 Multi-Instance fähig  
-- 🛡️ Schutz vor Race Conditions  
-- 🔄 Restart-sicher  
-- 🔀 Hybrid-Modus: Helper **oder** MQTT  
+- 🔀 Helper oder MQTT  
+- 🛡️ keine Race Conditions  
+
+---
+
+## 🔄 Update Hinweis
+
+### V3.2 → V3.2.2 FINAL
+
+Ein kritischer Fehler wurde behoben:
+
+- ❌ Running blieb nach STOP aktiv  
+- ✅ Jetzt immer korrekt AUS  
+
+👉 Update wird dringend empfohlen
 
 ---
 
 ## 📦 Installation
 
-### Option 1: Manuell
-
-1. Blueprint herunterladen  
-2. Nach folgendem Pfad kopieren:
+### Manuell
 
 ```
 config/blueprints/automation/
 ```
 
-3. Blueprints neu laden  
+---
+
+### Direkt importieren
+
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_2.yaml)
 
 ---
 
-### Option 2: Direkt importieren (empfohlen)
+## ⚙️ Konfiguration
 
-[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2.yaml)
+| Feld | Beschreibung |
+|------|------------|
+| Start | Timer starten |
+| Stop | Timer stoppen |
+| Dauer | hh:mm:ss |
+| Running | Aktiv |
+| Done | Fertig |
+| Reset | täglich |
+
+---
+
+## 🧠 Funktionsweise
+
+1. Start → Timer läuft  
+2. Running → EIN  
+3. Stop → sofort AUS  
+4. Ablauf → Done = EIN  
+5. Reset → alles AUS  
+
+---
+
+## 💡 Einsatz
+
+- Teich / Pool Pumpen  
+- Bewässerung  
+- Watchdog  
+- Verzögerungen  
+
+---
+
+## 📸 Vorschau
+
+![Preview](docs/preview.png)
 
 ---
 
