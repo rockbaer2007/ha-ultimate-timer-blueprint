@@ -75,6 +75,9 @@ config/blueprints/automation/
 5. Reset → alles AUS  
 
 ---
+## 📸 Blueprint Configuration
+
+![Blueprint](docs/preview_blueprint.png)
 
 ## 📸 Vorschau
 docs/preview.png
