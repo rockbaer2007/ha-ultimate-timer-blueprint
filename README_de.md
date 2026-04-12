@@ -1,13 +1,13 @@
-# ⏱️ Ultimate Timer V3.2.2 FINAL
+# ⏱️ Ultimate Timer V3.2.4 FINAL CLEAN
 
-[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_2.yaml)
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_4.yaml)
 
 ![GitHub release](https://img.shields.io/github/v/release/rockbaer2007/ha-ultimate-timer-blueprint)
 ![GitHub stars](https://img.shields.io/github/stars/rockbaer2007/ha-ultimate-timer-blueprint?style=social)
 
 🇬🇧 [English Version](README.md)
 
-> Leistungsstarker Hybrid-Timer für Home Assistant mit zuverlässiger STOP-Logik und MQTT Unterstützung.
+> Leistungsstarker Hybrid-Timer für Home Assistant mit zuverlässiger STOP-Logik, dauerhaftem DONE Status und MQTT Unterstützung.
 
 ---
 
@@ -17,7 +17,7 @@
 - ▶️ Start-Trigger (Taster)  
 - ⏹️ STOP funktioniert zuverlässig  
 - 📡 Running Status  
-- 🎯 Done Status  
+- 🎯 DONE bleibt aktiv bis Reset  
 - 🌙 täglicher Reset  
 - 🔁 Multi-Instance fähig  
 - 🔀 Helper oder MQTT  
@@ -27,14 +27,13 @@
 
 ## 🔄 Update Hinweis
 
-### V3.2 → V3.2.2 FINAL
+### V3.2 → V3.2.4 FINAL CLEAN
 
-Ein kritischer Fehler wurde behoben:
+- RUNNING Problem behoben  
+- STOP stabilisiert  
+- DONE bleibt jetzt aktiv  
 
-- ❌ Running blieb nach STOP aktiv  
-- ✅ Jetzt immer korrekt AUS  
-
-👉 Update wird dringend empfohlen
+👉 Update wird empfohlen
 
 ---
 
@@ -50,7 +49,7 @@ config/blueprints/automation/
 
 ### Direkt importieren
 
-[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_2.yaml)
+[![Open in Home Assistant](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https://raw.githubusercontent.com/rockbaer2007/ha-ultimate-timer-blueprint/main/blueprints/automation/ultimate_timer_v3_2_4.yaml)
 
 ---
 
@@ -77,18 +76,21 @@ config/blueprints/automation/
 
 ---
 
+## 📸 Vorschau
+
+| Idle | Running | Done |
+|------|--------|------|
+| ![Idle](docs/preview_idle1.png) | ![Running](docs/preview_runing1.png) | ![Done](docs/preview_done1.png) |
+| ![Idle](docs/preview_idle2.png) | ![Running](docs/preview_runing2.png) | ![Done](docs/preview_done2.png) |
+
+---
+
 ## 💡 Einsatz
 
 - Teich / Pool Pumpen  
 - Bewässerung  
 - Watchdog  
 - Verzögerungen  
-
----
-
-## 📸 Vorschau
-
-![Preview](docs/preview.png)
 
 ---
 
