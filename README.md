@@ -82,6 +82,10 @@ config/blueprints/automation/
 
 ![Blueprint](docs/preview_blueprint.png)
 
+## 🎥 Demo
+
+![Demo](docs/demo.gif)
+
 ## 📸 Preview
 
 | Idle | Running | Done |
