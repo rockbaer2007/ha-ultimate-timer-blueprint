@@ -83,8 +83,8 @@ config/blueprints/automation/
 
 | Idle | Running | Done |
 |------|--------|------|
-| ![Idle](docs/preview_idle1.png) | ![Running](docs/preview_running1.png) | ![Done](docs/preview_done1.png) |
-| ![Idle](docs/preview_idle2.png) | ![Running](docs/preview_running2.png) | ![Done](docs/preview_done2.png) |
+| ![Idle](docs/preview_idle1.png) | ![Running](docs/preview_runing1.png) | ![Done](docs/preview_done1.png) |
+| ![Idle](docs/preview_idle2.png) | ![Running](docs/preview_runing2.png) | ![Done](docs/preview_done2.png) |
 ---
 
 ## 💡 Use Cases
