@@ -77,6 +77,7 @@ config/blueprints/automation/
 ---
 
 ## 📸 Vorschau
+docs/preview.png
 
 | Idle | Running | Done |
 |------|--------|------|
