@@ -104,7 +104,7 @@ docs/preview.png
 
 ## 📜 Lizenz
 
-MIT Lizenz
+MIT Lizenz. Siehe [LICENSE](LICENSE).
 
 ---
 
